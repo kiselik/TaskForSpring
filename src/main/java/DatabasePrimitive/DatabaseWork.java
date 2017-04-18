@@ -1,13 +1,12 @@
 package DatabasePrimitive;
 
 public interface DatabaseWork {
-    String searchEmployee(int id);
 
-    String searchEmployeeJob(String job);
+    int getCountRows();
 
-    String searchEmployeeDept(String dept);
+    String searchNameEmployee(String id);
 
-    void AddEmployee(Integer empno, String ename, String job, Integer mgr, String hiredate, Integer salary, String comm, Integer deptno);
+    String getJobEmployee(String param);
 
-    void DeleteEmployee(int id);
+    void deleteEmployee(String id);
 }
